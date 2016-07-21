@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="1033.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gemseeker.edr.fxml.UpdateScreenController">
+   <children>
+      <ToolBar prefHeight="50.0" prefWidth="677.0">
+         <items>
+            <Button fx:id="back" mnemonicParsing="false" onAction="#action" prefHeight="40.0" prefWidth="40.0" styleClass="back-button" />
+         </items>
+      </ToolBar>
+      <ToolBar layoutX="676.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="50.0" prefWidth="357.0">
+        <items>
+          <Button fx:id="save" mnemonicParsing="false" onAction="#action" prefHeight="40.0" prefWidth="50.0" styleClass="button-default" text="Save" />
+            <Button fx:id="print" mnemonicParsing="false" onAction="#action" prefHeight="40.0" prefWidth="50.0" styleClass="button-default" text="Print" />
+        </items>
+      </ToolBar>
+      <Label layoutX="14.0" layoutY="61.0" text="Name:" />
+      <Label layoutX="14.0" layoutY="97.0" text="Date Committed:" />
+      <Label layoutX="14.0" layoutY="115.0" text="Case(s) / Case No.:" />
+      <Label layoutX="14.0" layoutY="133.0" text="Maximum Imposable Penalty:" />
+      <Label layoutX="15.0" layoutY="169.0" text="Estimated Date of Release:" />
+      <Label layoutX="14.0" layoutY="79.0" text="Court No:" />
+      <Label fx:id="name" layoutX="267.0" layoutY="61.0" prefHeight="17.0" prefWidth="351.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="court" layoutX="268.0" layoutY="79.0" prefHeight="17.0" prefWidth="351.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="dateCommitted" layoutX="268.0" layoutY="97.0" prefHeight="17.0" prefWidth="351.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="cases" layoutX="268.0" layoutY="115.0" prefHeight="17.0" prefWidth="351.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="mip" layoutX="268.0" layoutY="133.0" prefHeight="17.0" prefWidth="351.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="edr" layoutX="268.0" layoutY="169.0" prefHeight="17.0" prefWidth="351.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imageHolder" fitHeight="150.0" fitWidth="150.0" layoutX="867.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true" styleClass="picture-holder">
+         <image>
+            <Image url="@../images/person.png" />
+         </image></ImageView>
+      <Button fx:id="add" layoutX="14.0" layoutY="195.0" mnemonicParsing="false" onAction="#action" prefHeight="25.0" prefWidth="59.0" text="Add" />
+      <Button fx:id="remove" layoutX="75.0" layoutY="195.0" mnemonicParsing="false" onAction="#action" text="Remove Last" />
+      <TableView fx:id="table" layoutX="15.0" layoutY="227.0" prefHeight="256.0" prefWidth="1003.0">
+        <columns>
+          <TableColumn fx:id="col1" prefWidth="230.0" text="Date" />
+          <TableColumn fx:id="col2" prefWidth="174.0" text="GCTA" />
+            <TableColumn fx:id="col3" prefWidth="153.0" text="TASM" />
+            <TableColumn fx:id="col4" prefWidth="169.0" text="Total" />
+            <TableColumn fx:id="col5" prefWidth="280.0" text="Estimated Date of Release" />
+        </columns>
+      </TableView>
+      <Pane fx:id="taPanel" layoutX="355.0" layoutY="-400.0" prefHeight="200.0" prefWidth="370.0" styleClass="notification-bg">
+         <children>
+            <DatePicker fx:id="datePicker" layoutX="29.0" layoutY="48.0" prefHeight="25.0" prefWidth="311.0" promptText="Date" />
+            <TextField fx:id="gcta" layoutX="29.0" layoutY="79.0" prefHeight="25.0" prefWidth="156.0" promptText="GCTA" />
+            <TextField fx:id="tasm" layoutX="190.0" layoutY="79.0" prefHeight="25.0" prefWidth="150.0" promptText="TASM" />
+            <Button fx:id="done" defaultButton="true" layoutX="208.0" layoutY="118.0" mnemonicParsing="false" onAction="#action" prefHeight="25.0" prefWidth="67.0" text="Done" />
+            <Button fx:id="cancel" cancelButton="true" layoutX="282.0" layoutY="118.0" mnemonicParsing="false" onAction="#action" prefHeight="25.0" prefWidth="59.0" text="Cancel" />
+         </children>
+      </Pane>
+      <Label layoutX="14.0" layoutY="151.0" prefHeight="17.0" prefWidth="242.0" text="Estimated Date of Release w/o GCTA/TASM:" />
+      <Label fx:id="edrFormer" layoutX="268.0" layoutY="151.0" prefHeight="17.0" prefWidth="351.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Button fx:id="clearTA" layoutX="162.0" layoutY="195.0" mnemonicParsing="false" onAction="#action" text="Clear TA" />
+   </children>
+   <stylesheets>
+      <URL value="@../css/buttonStyles.css" />
+      <URL value="@../css/styles.css" />
+   </stylesheets>
+</AnchorPane>

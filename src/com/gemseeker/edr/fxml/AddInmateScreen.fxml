@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="501.0" prefWidth="1033.0" styleClass="mainFxmlClass" stylesheets="@../css/buttonStyles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gemseeker.edr.fxml.AddInmateScreenController">
+   <children>
+      <ImageView fx:id="imageHolder" fitHeight="150.0" fitWidth="150.0" layoutX="29.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true" styleClass="picture-holder">
+         <image>
+            <Image url="@../images/person.png" />
+         </image></ImageView>
+      <Button fx:id="changePicture" layoutX="186.0" layoutY="206.0" mnemonicParsing="false" onAction="#action" prefHeight="25.0" prefWidth="177.0" text="Change Picture" />
+      <TextField fx:id="firstName" layoutX="27.0" layoutY="241.0" prefHeight="25.0" prefWidth="338.0" promptText="First Name" />
+      <TextField fx:id="middleName" layoutX="27.0" layoutY="271.0" prefHeight="25.0" prefWidth="338.0" promptText="Middle Name" />
+      <TextField fx:id="lastName" layoutX="27.0" layoutY="302.0" prefHeight="25.0" prefWidth="338.0" promptText="Last Name" />
+      <TextField fx:id="court" layoutX="27.0" layoutY="334.0" prefHeight="25.0" prefWidth="338.0" promptText="Court No." />
+      <DatePicker fx:id="datePicker" layoutX="27.0" layoutY="366.0" prefHeight="25.0" prefWidth="338.0" promptText="Date Committed" />
+      <TextField fx:id="year" layoutX="27.0" layoutY="422.0" prefHeight="25.0" prefWidth="111.0" promptText="No. of Years" />
+      <TextField fx:id="months" layoutX="140.0" layoutY="422.0" prefHeight="25.0" prefWidth="111.0" promptText="No. of Months" />
+      <TextField fx:id="days" layoutX="253.0" layoutY="422.0" prefHeight="25.0" prefWidth="111.0" promptText="No. of Days" />
+      <TextField fx:id="newCase" layoutX="400.0" layoutY="68.0" prefHeight="25.0" prefWidth="543.0" promptText="Case Description" />
+      <Button fx:id="addCaseButton" layoutX="949.0" layoutY="68.0" mnemonicParsing="false" onAction="#action" text="Add Case" />
+      <ListView fx:id="caseList" layoutX="400.0" layoutY="101.0" prefHeight="359.0" prefWidth="616.0" />
+      <Button fx:id="removeCaseButton" layoutX="949.0" layoutY="467.0" mnemonicParsing="false" onAction="#action" prefHeight="25.0" prefWidth="67.0" text="Remove" />
+      <Separator layoutX="377.0" layoutY="45.0" orientation="VERTICAL" prefHeight="456.0" prefWidth="6.0" />
+      <Label layoutX="27.0" layoutY="60.0" text="Personal Information" />
+      <Label layoutX="28.0" layoutY="401.0" text="Length of Penalty" />
+      <ToolBar prefHeight="50.0" prefWidth="643.0">
+         <items>
+            <Button fx:id="back" layoutX="14.0" layoutY="9.0" mnemonicParsing="false" onAction="#action" prefHeight="40.0" prefWidth="40.0" styleClass="back-button" />
+         </items>
+      </ToolBar>
+      <ToolBar layoutX="639.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="50.0" prefWidth="394.0">
+        <items>
+          <Button fx:id="save" mnemonicParsing="false" onAction="#action" prefHeight="40.0" prefWidth="50.0" styleClass="button-default" text="Save" />
+        </items>
+      </ToolBar>
+   </children>
+</AnchorPane>

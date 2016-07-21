@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="1024.0" styleClass="mainFxmlClass" stylesheets="@../css/buttonStyles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gemseeker.edr.fxml.InmatesScreenController">
+   <children>
+      <Button fx:id="updateTA" layoutX="17.0" layoutY="16.0" mnemonicParsing="false" onAction="#action" prefHeight="31.0" prefWidth="123.0" text="Update TA" />
+      <Button fx:id="add" layoutX="874.0" layoutY="12.0" mnemonicParsing="false" onAction="#action" prefHeight="40.0" prefWidth="40.0" styleClass="add-button" />
+      <Button fx:id="edit" layoutX="923.0" layoutY="12.0" mnemonicParsing="false" onAction="#action" prefHeight="40.0" prefWidth="40.0" styleClass="edit-button" />
+      <Button fx:id="delete" layoutX="970.0" layoutY="12.0" mnemonicParsing="false" onAction="#action" prefHeight="40.0" prefWidth="40.0" styleClass="delete-button" />
+      <TableView fx:id="table" layoutX="17.0" layoutY="58.0" prefHeight="427.0" prefWidth="996.0">
+        <columns>
+          <TableColumn fx:id="col1" prefWidth="231.0" text="Name" />
+          <TableColumn fx:id="col2" prefWidth="129.0" text="Date Committed" />
+            <TableColumn fx:id="col3" prefWidth="245.0" text="Case(s)" />
+            <TableColumn fx:id="col4" minWidth="0.0" prefWidth="185.0" text="Max. Imposable Penalty" />
+            <TableColumn fx:id="col5" prefWidth="205.0" text="Estimated Date of Release" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

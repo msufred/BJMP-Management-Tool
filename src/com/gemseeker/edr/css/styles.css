@@ -1,0 +1,25 @@
+.picture-holder{
+    -fx-background-image: url(../images/person.png);
+    -fx-background-repeat: no-repeat;
+}
+
+.bjmp-bg-tiled{
+    -fx-background-image: url(../images/bg-tile.png);
+}
+
+.form-bg{
+    -fx-background-color: #354c7e;
+    -fx-background-radius: 10px ;
+}
+
+.notification-bg{
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 10px ;
+    -fx-effect: dropshadow(gaussian, black, 10, 0, 0, 0);
+}
+
+.header{
+    -fx-background-image: url(../images/header.png);
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: #435785;
+}

@@ -1,0 +1,28 @@
+.back-button, .add-button, .edit-button, .delete-button{
+    -fx-background-color: transparent;
+    -fx-background-repeat: no-repeat;
+}
+
+.back-button{-fx-background-image: url(../images/btn_back_default.png);}
+.back-button:hover{-fx-background-image: url(../images/btn_back_hover.png);}
+.back-button:pressed{-fx-background-image: url(../images/btn_back_selected.png);}
+
+.add-button{-fx-background-image: url(../images/btn_new_account_hover.png);}
+.add-button:hover{-fx-background-image: url(../images/btn_new_account_default.png);}
+.add-button:pressed{-fx-background-image: url(../images/btn_new_account_selected.png);}
+
+.edit-button{-fx-background-image: url(../images/btn_edit_default.png);}
+.edit-button:hover{-fx-background-image: url(../images/btn_edit_hover.png);}
+.edit-button:pressed{-fx-background-image: url(../images/btn_edit_selected.png);}
+
+.delete-button{-fx-background-image: url(../images/btn_delete_default.png);}
+.delete-button:hover{-fx-background-image: url(../images/btn_delete_hover.png);}
+.delete-button:pressed{-fx-background-image: url(../images/btn_delete_selected.png);}
+
+.button-default{
+    -fx-background-color: #2181aa;
+    -fx-background-radius: 20px;
+    -fx-text-fill: #fff;
+}
+.button-default:hover{-fx-background-color: #30ade3;}
+.button-default:pressed{-fx-background-color: #1a5873;}

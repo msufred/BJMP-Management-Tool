@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="610.0" prefWidth="1034.0" stylesheets="@../css/styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gemseeker.edr.fxml.MainScreenController">
+   <children>
+      <Pane prefHeight="82.0" prefWidth="1024.0" styleClass="header" />
+      <MenuBar nodeOrientation="LEFT_TO_RIGHT" prefHeight="25.0" prefWidth="1024.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="Admin">
+               <items>
+                  <MenuItem fx:id="changePass" mnemonicParsing="false" onAction="#action" text="Change Password" />
+                  <MenuItem fx:id="logout" mnemonicParsing="false" onAction="#action" text="Logout" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <Menu mnemonicParsing="false" text="Print">
+                    <items>
+                      <MenuItem fx:id="printInmateList" mnemonicParsing="false" text="Inmates List" />
+                        <MenuItem fx:id="printSpecificInmate" mnemonicParsing="false" text="Specific Inmate Info" />
+                    </items>
+                  </Menu>
+                  <MenuItem mnemonicParsing="false" text="Export to Excel File" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="About" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <Pane fx:id="container" prefHeight="490.0" prefWidth="1024.0" />
+   </children>
+</VBox>
