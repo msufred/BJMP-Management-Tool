@@ -78,6 +78,11 @@ public class DBManager {
     }
     
     static class Constants {
+        // tables
+        public static final String TABLE_INMATES = "Inmates";
+        public static final String TABLE_CASES = "Cases";
+        public static final String TABLE_CASE_RECORDS = "Case Records";
+        public static final String TABLE_COURTS = "Courts";
         // inmate
         public static final String ID = "ID";
         public static final String FIRST_NAME = "First Name";
